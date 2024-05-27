@@ -1,0 +1,18 @@
+.interstitial-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 35pt;
+    font-weight: 800;
+    width: 80%;
+}
+
+
+
+.interstitial button {
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+}

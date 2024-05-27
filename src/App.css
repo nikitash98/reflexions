@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  font-family: 'Arial';
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
 }
 
 .App-logo {
@@ -14,14 +18,13 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
@@ -35,4 +38,183 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+.button {
+  position: absolute;
+  z-index: 20;
+  pointer-events: auto;
+}
+
+input {
+  pointer-events: auto;
+}
+select {
+  pointer-events: auto;
+}
+button {
+  pointer-events: auto;
+}
+
+.right-button {
+  left: 10%;
+  bottom: 10%;
+  z-index: 10;
+}
+.left-button {
+  right: 10%;
+  bottom: 10%;
+  z-index: 10;
+
+}
+
+.ThreeCanvas{
+
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  z-index: -5;
+}
+
+
+.OverlayVideo {
+
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  background-blend-mode: multiply;
+  z-index: 5;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+
+}
+
+.pointer_input {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+.userBox {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  text-align: left;
+}
+
+.timeContainer {
+  height: 100%;
+  width: 100%;
+  pointer-events: auto;
+}
+
+.timeClicked {
+  cursor: wait;
+}
+.threedeesurvey {
+  width: 5000px;
+  height: 1000px;
+}
+
+.timeBox {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+}
+
+
+/* styles.css */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+button {
+  padding: 5px;
+  background-color: rgb(238, 238, 238);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: rgb(220, 220, 220);
+  transition: all 0.2s;
+}
+
+button img {
+  width: 50px;
+}
+
+.webcam {
+  left: 0%;
+}
+
+.pointerVideo {
+  left: 50%;
+  top: 50%;
+}
+
+.pixelInput {
+  padding: 5px;
+  line-height: 10px;
+}
+
+.pixelContainer {
+  line-height: 30px;
+}
+
+.nextButton {
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  transform: translate(-50%, -50%);
+  opacity: 100%;
+  transition: all .5s;
+}
+
+
+.nextButtonHidden {
+  opacity: 0;
+  
+}
+
+.question {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  display: block;
+  transform: translate(-50%, 50%);
+}
+.pixelInput {
+  position: relative;
+}
+
+.textAdd {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  bottom: -10px;
+  font-size: 8px;
 }
